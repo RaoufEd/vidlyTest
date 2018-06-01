@@ -19,7 +19,10 @@ namespace Vidly2.Models
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+
     {
+        public DbSet<Customer> Customers { get; set; }
+        //here will add dbset movies
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

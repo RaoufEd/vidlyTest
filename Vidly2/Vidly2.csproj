@@ -203,8 +203,46 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805262242191_InitialModel.cs" />
+    <Compile Include="Migrations\201805262242191_InitialModel.Designer.cs">
+      <DependentUpon>201805262242191_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805270205503_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201805270205503_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201805270205503_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805272208182_fixingMissingCustomerTable.cs" />
+    <Compile Include="Migrations\201805272208182_fixingMissingCustomerTable.Designer.cs">
+      <DependentUpon>201805272208182_fixingMissingCustomerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805272220462_AddMemberShipType.cs" />
+    <Compile Include="Migrations\201805272220462_AddMemberShipType.Designer.cs">
+      <DependentUpon>201805272220462_AddMemberShipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805272242478_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201805272242478_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201805272242478_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805272251100_ApplyAnnotationsToCustomer.cs" />
+    <Compile Include="Migrations\201805272251100_ApplyAnnotationsToCustomer.Designer.cs">
+      <DependentUpon>201805272251100_ApplyAnnotationsToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805272331480_addnameToMemberShipType.cs" />
+    <Compile Include="Migrations\201805272331480_addnameToMemberShipType.Designer.cs">
+      <DependentUpon>201805272331480_addnameToMemberShipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805272334420_SetNameforMembershipType.cs" />
+    <Compile Include="Migrations\201805272334420_SetNameforMembershipType.Designer.cs">
+      <DependentUpon>201805272334420_SetNameforMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805272356207_update.cs" />
+    <Compile Include="Migrations\201805272356207_update.Designer.cs">
+      <DependentUpon>201805272356207_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -295,6 +333,32 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805262242191_InitialModel.resx">
+      <DependentUpon>201805262242191_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805270205503_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201805270205503_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805272208182_fixingMissingCustomerTable.resx">
+      <DependentUpon>201805272208182_fixingMissingCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805272242478_PopulateMembershipTypes.resx">
+      <DependentUpon>201805272242478_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805272251100_ApplyAnnotationsToCustomer.resx">
+      <DependentUpon>201805272251100_ApplyAnnotationsToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805272331480_addnameToMemberShipType.resx">
+      <DependentUpon>201805272331480_addnameToMemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805272334420_SetNameforMembershipType.resx">
+      <DependentUpon>201805272334420_SetNameforMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805272356207_update.resx">
+      <DependentUpon>201805272356207_update.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
